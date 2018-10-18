@@ -69,7 +69,7 @@ public class ReactContextBuilder {
         }
 
         // load native modules
-        NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager);
+        NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager, false);
         addNativeModules(reactContext, nativeRegistryBuilder);
 
         CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
